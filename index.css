@@ -1,0 +1,317 @@
+html, body{
+    background-color: rgb(78, 76, 76);
+    /* opacity: 0.9; */
+    /* overflow: hidden; */
+    /* margin: 0; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* .container{
+    height: 20px;
+    width: 100%;
+    border: 2px solid white;
+} */
+
+.navbar{
+    border: 0.1em solid white;
+    /* height: 30%; */
+    width: 99.7%;
+    max-width: 99.7%;
+    /* max-width: 99%; */
+    position: relative;
+    /* margin: 0; */
+    margin-top: 10px;
+    margin-bottom: 1em;
+    padding: 0;
+    display:flex;
+    border-radius: 2em;
+    position: sticky;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 10px;
+    transition: color 0.25s;
+    transition: transform 0.25s;
+    transition: all 0.5s;
+    cursor: default;
+    /* transform: rotate(0deg); */
+}
+
+.navbar a:hover{
+    color: rgb(78, 76, 76);
+    background-color: white;
+    /* border: 1px solid white; */
+    border-radius: 100px;
+    /* font-weight: bold; */
+    /* transform: rotate(360deg); */
+    transition: transform 0.25s;
+    transition: all 0.55s;
+    /* font-size: 1.5em; */
+    /* rgb(78, 76, 76) */
+}
+
+.overlay {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax{
+    /* border:2px solid white; */
+    border-radius: 10px;
+    height:30em;
+    width: 100%;
+    background-image: url("image/myphoto2.jpg");
+    /* height: 100%;
+    width: 100%; */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+    transition: all 1s;
+    top: 0;
+}
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* font-family: 'Mochiy Pop P One', sans-serif; */
+    font-family: 'Merriweather', serif;
+    font-size: 4.5em;
+    /* z-index: 30; */
+    opacity: 1;
+}
+
+.typewriter{
+    
+    position: absolute;
+    top: 65%;
+    /* left: 50%; */
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5em;
+    /* text-align: center; */
+    justify-content: center;
+
+    overflow: hidden;
+    /* border-right: 0.15em solid white; */
+    white-space: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 1em auto;
+    letter-spacing: 0.15em;
+    /* animation: 
+    typing 4s steps(70, end),
+    blink 0.75s step-end infinite; */
+}
+.cursorSize{
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 55%;}
+}
+
+@keyframes blink{
+    from, to {border-color: transparent}
+    50%{border-color: white;}
+}
+
+.about{
+    /* border: 2px solid white; */
+    height: 20em;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* z-index: 1; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo{
+    background-image: url("image/myphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    position: absolute;
+    width: 20em;
+    border-radius: 200px;
+    box-shadow: 2px 2px 20px 5px black;
+    /* transition: all 0.5s; */
+    margin-left: 35%;
+    margin-right: 30%;
+    /* border: 2px solid white;
+    height: 20px;
+    width: 20px; */
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .photo{
+        transition: all 1.5s;
+    }
+}
+.photo-transition{
+    margin-left: 5%;
+    margin-right: 50%;
+}
+.photo:hover{
+    box-shadow: 2px 2px 30px 15px black;
+    /* margin-left: 15%; */
+}
+
+.info{
+    word-wrap: normal;
+    max-width: 40%;
+    margin-left: 1em;
+    padding-right: 4em;
+    /* transition: all 1s; */
+    color: white;
+    /* padding-top: 10; */
+    opacity: 0;
+    margin-right: 10%;
+    transform: scale(0.5);
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .info{
+        transition: all 1.5s;
+    }
+}
+
+.info-transition{
+    opacity: 1;
+    margin-right: -30%;
+    transform: none;
+}
+
+.s_parallax{
+    height: 5em;
+}
+/* .about-cont{
+    background-image: url("image/backg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding-left: 30%; */
+    /* padding-right: 30%; */
+    color: #fff;
+    background-color: rgb(48, 47, 47);
+    /* border: 2px solid white; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 20px 10px black; */
+    font-size: 2em;
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .details{
+        transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+}
+.details-transition{
+    opacity: 1;
+    transform: none;
+}
+.skill_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container h2{
+    text-align: center;
+    /* margin-left: 50%; */
+    /* margin-right :50%; */
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: 3.5em;
+    /* padding-bottom: 0; */
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100%;
+    
+    /* border-radius: 10px; */
+
+}
+
+.skills .card{
+    border: 3px solid #fff;
+    height: 15em;
+    width: 25%;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* box-shadow: 5px 5px 5px 2px white; */
+    /* background-color: black; */
+    transition: all 1s;
+
+}
+
+.card:not(:first-child){
+    margin-left: -200px;
+}
+
+.card:hover{
+    transform: translateY(-2rem);
+    opacity: 1;
+}
+
+.card:hover~.card{
+    transform: translateX(200px);
+}
+
+.java{
+    background-image: url("image/java.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.dsa{
+    background-image: url("image/dsa.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+.webDev{
+    background-image: url("image/web.jpeg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+.app{
+    background-image: url("image/app.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+
+
