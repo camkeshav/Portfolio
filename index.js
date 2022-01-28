@@ -32,14 +32,33 @@ const obersver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             detail.classList.add('details-transition');
-            return;
+                return;
         }
 
         detail.classList.remove('details-transition');
     });
 });
-
 obersver.observe(document.querySelector('.about-cont'));
+
+
+
+const detail_title = document.querySelector('.about-title');
+    detail_title.classList.remove('abt-title-transition');
+
+const obersver0 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            detail_title.classList.add('abt-title-transition');
+                return;
+        }
+
+        detail_title.classList.remove('abt-title-transition');
+    });
+});
+
+obersver0.observe(document.querySelector('.about-cont'));
+
+
 
 const photo = document.querySelector('.photo');
     photo.classList.remove('photo-transition');
@@ -71,6 +90,13 @@ const obser3 = new IntersectionObserver(entries => {
 });
 
 obser3.observe(document.querySelector('.about'))
+
+
+// const navb = document.querySelector('.nav-a');
+// navb.addEventListener('focus', () => {
+
+
+// })
 
 
 
