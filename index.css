@@ -256,7 +256,7 @@ html, body{
     width: 50%;
     align-items: center;
     text-align: center;
-    color: #000;
+    color: #fff;
     font-weight: bolder;
     font-family: 'Ubuntu', sans-serif;
     /* padding-top: 25%;
@@ -400,6 +400,82 @@ html, body{
 
 .t_parallax{
     height:15em;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    height: 20em;
+    width: 20em;
+    justify-content: center;
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
+    width: 100%;
+    height: 40em;
+    background-color: black;
+}
+
+.git{
+    grid-area: 1/1/2/2;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.image1{
+    background-image: url("image/github.png");
+    background-size: cover;
+    height: 10em;
+    width: 10em;
+}
+.insta{
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image2{
+    background-image: url("image/instagram.png");
+    background-size: cover;
+    height: 10em;
+    width: 10em;
+}
+.link-in{
+    grid-area: 1/3/2/4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.image3{
+    background-image: url("image/linkedin.png");
+    background-size: cover;
+    height: 10em;
+    width: 10em;
+}
+.hkr-rank{
+    grid-area: 2/1/3/span 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image4{
+    background-image: url("image/hackerrank_logo.png");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    height: 3em;
+    width: 20em;
+    /* border: 4px dashed white; */
 }
 
 
