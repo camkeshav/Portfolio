@@ -34,13 +34,13 @@ html, body{
     /* position: absolute; */
     color: white;
     text-decoration: none;
-    margin: 5px 10px;
-    padding: 10px;
+    margin: 0.5em 0.7em;
+    padding: 0.7em;
     transition: color 0.25s;
     transition: transform 0.25s;
     transition: all 0.5s;
     cursor: default;
-    border-top: 2px transparent #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0);
     /* transform: rotate(0deg); */
     /* border-width: 2px 0 2px 0; */
     /* opacity: 0; */
@@ -82,7 +82,7 @@ html, body{
     transition: all 0.55s; */
     /* font-size: 1.5em; */
     /* rgb(78, 76, 76) */
-    animation: brdr 2s steps(70, end);
+    /* animation: brdr 2s steps(70, end); */
     border-top: 1px solid #fff;
     transition: all 0.5s ease-out;
     cursor: pointer;
@@ -126,6 +126,7 @@ html, body{
     font-size: 4.5em;
     /* z-index: 30; */
     opacity: 1;
+    box-sizing: border-box;
 }
 
 .typewriter{
@@ -145,7 +146,7 @@ html, body{
     margin-left: 0;
     margin-right: 0;
     margin: 1em auto;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.20em;
     /* animation: 
     typing 4s steps(70, end),
     blink 0.75s step-end infinite; */
@@ -375,7 +376,7 @@ html, body{
 
 .card:hover~.card{
     transform: translateX(200px);
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 
