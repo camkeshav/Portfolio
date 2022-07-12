@@ -21,10 +21,10 @@ html, body{
     /* max-width: 99%; */
     /* margin: 0; */
     /* margin-top: 10px; */
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     padding: 0;
     display:flex;
-    border-radius: 2em;
+    border-radius: 2rem;
     position: fixed;
     top: 0;
     transition: all 0.5s;
@@ -34,8 +34,8 @@ html, body{
     /* position: absolute; */
     color: white;
     text-decoration: none;
-    margin: 0.5em 0.7em;
-    padding: 0.7em;
+    margin: 0.5rem 0.7rem;
+    padding: 0.7rem;
     transition: color 0.25s;
     transition: transform 0.25s;
     transition: all 0.5s;
@@ -123,7 +123,7 @@ html, body{
     color: white;
     /* font-family: 'Mochiy Pop P One', sans-serif; */
     font-family: 'Merriweather', serif;
-    font-size: 4.5em;
+    font-size: 4.5rem;
     /* z-index: 30; */
     opacity: 1;
     box-sizing: border-box;
@@ -136,7 +136,7 @@ html, body{
     /* left: 50%; */
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     /* text-align: center; */
     justify-content: center;
 
@@ -146,7 +146,7 @@ html, body{
     margin-left: 0;
     margin-right: 0;
     margin: 1em auto;
-    letter-spacing: 0.20em;
+    letter-spacing: 0.20rem;
     /* animation: 
     typing 4s steps(70, end),
     blink 0.75s step-end infinite; */
@@ -170,13 +170,15 @@ html, body{
     /* border: 2px solid white; */
     height: 20em;
     width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     /* z-index: 1; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+    
 }
 
 .photo{
@@ -186,7 +188,7 @@ html, body{
     height: 20rem;
     position: absolute;
     width: 20em;
-    border-radius: 200px;
+    border-radius: 20rem;
     box-shadow: 2px 2px 20px 5px black;
     /* transition: all 0.5s; */
     margin-left: 35%;
@@ -199,6 +201,18 @@ html, body{
 @media (prefers-reduced-motion: no-preference){
     .photo{
         transition: all 1.5s;
+    }
+}
+
+@media(max-width:1170px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:730px) {
+    .about{
+        flex-direction: row;
     }
 }
 .photo-transition{
@@ -221,6 +235,9 @@ html, body{
     opacity: 0;
     margin-right: 10%;
     transform: scale(0.5);
+    float: inline-end;
+    margin-left: 50%;
+    margin-top: 5%;
 }
 
 @media (prefers-reduced-motion: no-preference){
